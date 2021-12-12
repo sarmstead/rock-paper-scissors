@@ -2,10 +2,9 @@
 // 1 = paper
 // 2 = scissors
 
-let user = '';
 let computer = Math.floor(Math.random() * 3);
 
-const checkWinner = () => {
+const checkWinner = (user) => {
     let winner = '';
     
     if(user === computer) {
@@ -18,4 +17,5 @@ const checkWinner = () => {
 
     return winner;
 }
-console.log(computer);
+
+console.log(checkWinner(2));
